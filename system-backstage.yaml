@@ -31,9 +31,9 @@ metadata:
   annotations:
     backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
 spec:
-  type: service
-  lifecycle: experimental
+  type: Web Service
+  lifecycle: System
   owner: System-Teams
-  system: artist-engagement-portal
+  system: System Infrastructure Portals
   dependsOn: ['resource:artists-db']
   apiConsumedBy: ['component:www-artist']
