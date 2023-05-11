@@ -10,8 +10,8 @@ metadata:
     - url: http://192.168.99.2/csb6652b71/config/log_off_page.htm
       title: Switch Server Room(3rd Floor)
       icon: web
-    - url: https://example.com/group
-      title: Example Group
+    - url: http://192.168.99.3/csfec05640/config/log_off_page.htm
+      title: Switch 1st Floor
       icon: web
     - url: http://192.168.99.4/cscc9160a2/mts/config/log_off_page.htm
       title: Destor Switch 3rd Floor
@@ -19,14 +19,14 @@ metadata:
     - url: https://192.168.98.188/62f01f71b6d948019d13ac8cb34971b3/login
       title: Controller
       icon: web
-    - url: https://example.com/help
-      title: Support
+    - url: https://login.mailgun.com/login/
+      title: Mailgun
       icon: web
-    - url: https://example.com/web
-      title: Website
+    - url: https://192.168.99.11/restgui/start.html
+      title: iDRAC Controller 9 (TOP)
       icon: web
-    - url: https://example.com/alert
-      title: Alerts
+    - url: https://192.168.99.11/restgui/start.html
+      title: iDRAC Controller 9 (ฺBELOW)
       icon: web
   annotations:
     backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
