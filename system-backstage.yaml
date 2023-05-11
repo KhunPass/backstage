@@ -4,8 +4,8 @@ metadata:
   name: System-THL
   description: All infrastructure THL
   tags:
-    - java
-    - data
+    - Network
+    - WebService
   links:
     - url: http://192.168.99.2/csb6652b71/config/log_off_page.htm
       title: Switch Server Room(3rd Floor)
