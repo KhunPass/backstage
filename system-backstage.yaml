@@ -1,14 +1,14 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: artist-lookup
-  description: Artist Lookup
+  name: System-THL
+  description: All infrastructure THL
   tags:
     - java
     - data
   links:
-    - url: https://example.com/user
-      title: Examples Users
+    - url: http://192.168.99.2/csb6652b71/config/log_off_page.htm
+      title: Switch Server Room(3rd Floor)
       icon: user
     - url: https://example.com/group
       title: Example Group
@@ -33,7 +33,7 @@ metadata:
 spec:
   type: service
   lifecycle: experimental
-  owner: team-a
+  owner: System-Teams
   system: artist-engagement-portal
   dependsOn: ['resource:artists-db']
   apiConsumedBy: ['component:www-artist']
