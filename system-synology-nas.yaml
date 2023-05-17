@@ -19,16 +19,16 @@ metadata:
       icon: web
     - url: https://audio.corp.tonghuagroup.com/
       title: Audio 
-      icon: web
+      icon: audio
     - url: https://file.corp.tonghuagroup.com/
       title: File
-      icon: web
+      icon: file
     - url: https://photo.corp.tonghuagroup.com/
       title: Photo
-      icon: web
+      icon: photo
     - url: https://video.corp.tonghuagroup.com/
       title: video
-      icon: web
+      icon: video
   #annotations:
     #backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
 spec:
