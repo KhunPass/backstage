@@ -1,39 +1,40 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: artist-lookup
-  description: Artist Lookup
+  name: Synology Nas
+  description: Synology Nas Tonghuagroup
   tags:
-    - java
-    - data
+    - service
+    - nas
+    - storage
   links:
-    - url: https://example.com/user
-      title: Examples Users
-      icon: user
-    - url: https://example.com/group
-      title: Example Group
-      icon: group
-    - url: https://example.com/cloud
-      title: Link with Cloud Icon
-      icon: cloud
-    - url: https://example.com/dashboard
-      title: Dashboard
-      icon: dashboard
-    - url: https://example.com/help
-      title: Support
-      icon: help
-    - url: https://example.com/web
-      title: Website
+    - url: https://th877.corp.tonghuagroup.com/
+      title: FileShare
       icon: web
-    - url: https://example.com/alert
-      title: Alerts
-      icon: alert
-  annotations:
-    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
+    - url: https://th881.corp.tonghuagroup.com/
+      title: Backup Server
+      icon: web
+    - url: https://drive.tonghuagroup.com/
+      title: Synology Drive
+      icon: web
+    - url: https://audio.corp.tonghuagroup.com/
+      title: Audio 
+      icon: web
+    - url: https://file.corp.tonghuagroup.com/
+      title: File
+      icon: web
+    - url: https://photo.corp.tonghuagroup.com/
+      title: Photo
+      icon: web
+    - url: https://video.corp.tonghuagroup.com/
+      title: video
+      icon: web
+  #annotations:
+    #backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
 spec:
-  type: service
+  type: web service
   lifecycle: experimental
-  owner: team-a
-  system: artist-engagement-portal
-  dependsOn: ['resource:artists-db']
-  apiConsumedBy: ['component:www-artist']
+  owner: system
+  system: 
+  dependsOn: 
+  apiConsumedBy: 
