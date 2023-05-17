@@ -19,7 +19,7 @@ metadata:
       icon: web
     - url: https://audio.corp.tonghuagroup.com/
       title: Audio 
-      icon: audio
+      icon: dashboard
     - url: https://file.corp.tonghuagroup.com/
       title: File
       icon: file
