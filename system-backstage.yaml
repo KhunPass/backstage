@@ -28,8 +28,6 @@ metadata:
     - url: https://192.168.99.11/restgui/start.html
       title: iDRAC Controller 9 (BELOW)
       icon: web
-  annotations:
-    backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
 spec:
   type: Web Service
   lifecycle: System
