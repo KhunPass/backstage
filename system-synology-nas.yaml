@@ -30,7 +30,7 @@ metadata:
       title: video
       icon: video
   annotations:
-    backstage.io/managed-by-location: url: https://coda.io/d/Company-Servers-Applications-and-Services_dqSD72odWEj/Synology-NAS_surOZ#_luwqH
+    backstage.io/source-location: url:https://coda.io/d/Company-Servers-Applications-and-Services_dqSD72odWEj/Synology-NAS_surOZ#_luwqH
 spec:
   type: Web Service
   lifecycle: System
