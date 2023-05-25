@@ -34,7 +34,7 @@ metadata:
 spec:
   type: Web Service
   lifecycle: System
-  owner: team-b
-  system: System Infrastructure Portals
+  owner: team-a
+  system: system
   dependsOn: ['resource:artists-db']
   apiConsumedBy: ['component:www-artist']
