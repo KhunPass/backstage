@@ -1,4 +1,11 @@
 apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system
+spec:
+  owner: team-a
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: System-THL
