@@ -39,6 +39,6 @@ spec:
   type: Web Service
   lifecycle: System
   owner: team-a
-  system: System Infrastructure Portals
+  system: system
   dependsOn: ['resource:artists-db']
   apiConsumedBy: ['component:www-artist']
