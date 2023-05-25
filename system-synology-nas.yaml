@@ -29,8 +29,8 @@ metadata:
     - url: https://video.corp.tonghuagroup.com/
       title: video
       icon: video
-  #annotations:
-    #backstage.io/linguist: 'https://github.com/backstage/backstage/tree/master/plugins/playlist'
+  annotations:
+    backstage.io/managed-by-location: url: https://coda.io/d/Company-Servers-Applications-and-Services_dqSD72odWEj/Synology-NAS_surOZ#_luwqH
 spec:
   type: Web Service
   lifecycle: System
