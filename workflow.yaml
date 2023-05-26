@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: workflow-automation
+spec:
+  owner: team-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: n8n
+  description: THG Workflow n8n
+  tags:
+    - workflow
+    - automation
+  links:
+    - url: http://thserver.corp.tonghuagroup.com:30020
+      title: n8n
+      icon: web
+spec:
+  type: workflow
+  lifecycle: production
+  owner: team-system
+  system: workflow-automation
+  dependsOn: ['resource:artists-db']
+  apiConsumedBy: ['component:www-artist']
