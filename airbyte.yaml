@@ -6,6 +6,9 @@ metadata:
     - url: http://thserver.corp.tonghuagroup.com:30040
       title: Airbyte
       icon: web
+    - url: http://thserver.corp.tonghuagroup.com:30040
+      title: dbt
+      icon: web
 spec:
   owner: team-system
 ---
