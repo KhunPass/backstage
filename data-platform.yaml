@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: data-platform
+spec:
+  owner: team-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Driectus
+  description: THG Data-Platform
+  tags:
+    - dataplatform
+    - webservice
+  links:
+    - url: http://thserver.corp.tonghuagroup.com:30010
+      title: Driectus
+      icon: web
+spec:
+  type: dataplatform
+  lifecycle: System
+  owner: team-system
+  system: data-platform
+  dependsOn: ['resource:artists-db']
+  apiConsumedBy: ['component:www-artist']
