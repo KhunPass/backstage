@@ -8,17 +8,17 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Driectus
-  description: THG Data-Platform
+  name: Metabase
+  description: THG Metabase
   tags:
-    - dataplatform
-    - webservice
+    - bi
+    - analytics
   links:
     - url: http://thserver.corp.tonghuagroup.com:30010
       title: Driectus
       icon: web
 spec:
-  type: Bi-Analytics
+  type: bi-analytics
   lifecycle: System
   owner: team-system
   system: bi-analytics
