@@ -1,58 +1,35 @@
 apiVersion: backstage.io/v1alpha1
-kind: Resource
-metadata:
-  name: system-resource
-  description: resource support system 
-  links: 
-   - url: https://coda.io/d/Company-Servers-Applications-and-Services_dqSD72odWEj/Network-WIFI_su5l9#_luHDx
-     title: coda.io
-     icon: doc
-spec:
-  type: Documents
-  owner: team-a
-  system: system
----
-apiVersion: backstage.io/v1alpha1
 kind: System
 metadata:
-  name: system
+  name: monitor
 spec:
-  owner: team-a
+  owner: team-system
 ---
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: System-THL
-  description: All infrastructure THL
+  name: Monitor
+  description: THG Monitor
   tags:
-    - network
-    - service
+    - monitor
+    - webservice
   links:
-    - url: http://192.168.99.2/csb6652b71/config/log_off_page.htm
-      title: Switch Server Room(3rd Floor)
+    - url: http://grafana.corp.tonghuagroup.com:3000/login
+      title: Grafana Internal
       icon: web
-    - url: http://192.168.99.3/csfec05640/config/log_off_page.htm
-      title: Switch 1st Floor
+    - url: https://status.thamc.co.th
+      title: Grafana thamstatus
       icon: web
     - url: http://192.168.99.4/cscc9160a2/mts/config/log_off_page.htm
       title: Destor Switch 3rd Floor
       icon: web
-    - url: https://192.168.98.188/62f01f71b6d948019d13ac8cb34971b3/login
-      title: Controller
-      icon: web
-    - url: https://login.mailgun.com/login/
-      title: Mailgun
-      icon: web
-    - url: https://192.168.99.11/restgui/start.html
-      title: iDRAC Controller 9 (TOP)
-      icon: web
-    - url: https://192.168.99.11/restgui/start.html
-      title: iDRAC Controller 9 (BELOW)
+    - url: http://192.168.110.201:9090
+      title: Prometheus Internal
       icon: web
 spec:
-  type: Web Service
+  type: monitor
   lifecycle: System
-  owner: team-a
-  system: system
+  owner: team-system
+  system: monitor
   dependsOn: ['resource:artists-db']
   apiConsumedBy: ['component:www-artist']
