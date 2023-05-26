@@ -1,0 +1,26 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: data-engineering
+spec:
+  owner: team-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Data-Engineering
+  description: THG Data Engineering
+  tags:
+    - data
+    - webservice
+  links:
+    - url: http://thserver.corp.tonghuagroup.com:30040
+      title: Airbyte
+      icon: web
+spec:
+  type: data-engineering
+  lifecycle: Production
+  owner: team-system
+  system: data-engineering
+  dependsOn: ['resource:artists-db']
+  apiConsumedBy: ['component:www-artist']
