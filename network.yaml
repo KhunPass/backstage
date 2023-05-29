@@ -1,0 +1,35 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system
+spec:
+  owner: team-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Network THG
+  description: all link web service network in tonghuagroup
+  tags:
+    - network
+    - service
+  links:
+    - url: http://192.168.99.2/csb6652b71/config/log_off_page.htm
+      title: Switch Server Room (3rd Floor)
+      icon: web
+    - url: http://192.168.99.3/csfec05640/config/log_off_page.htm
+      title: Switch (1st Floor)
+      icon: web
+    - url: http://192.168.99.4/cscc9160a2/mts/config/log_off_page.htm
+      title: Destor Switch (3rd Floor)
+      icon: web
+    - url: https://192.168.98.188/62f01f71b6d948019d13ac8cb34971b3/login
+      title: Controller
+      icon: web
+spec:
+  type: network
+  lifecycle: Production
+  owner: team-system
+  system: system
+  dependsOn: ['resource:artists-db']
+  apiConsumedBy: ['component:www-artist']
