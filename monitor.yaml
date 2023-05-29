@@ -20,12 +20,12 @@ metadata:
     - url: https://status.thamc.co.th
       title: Grafana thamstatus
       icon: web
-    - url: http://192.168.99.4/cscc9160a2/mts/config/log_off_page.htm
-      title: Destor Switch 3rd Floor
-      icon: web
     - url: http://192.168.110.201:9090
       title: Prometheus Internal
       icon: web
+    - url: https://github.com/TongHuaLabs/th-monitoring
+      title: Readme
+      icon: githup
 spec:
   type: monitor
   lifecycle: System
