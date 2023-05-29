@@ -1,0 +1,38 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: system
+spec:
+  owner: team-system
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Server-THG
+  description: all web service server tonghuagroup
+  tags:
+    - server
+    - webservice
+  links:
+    - url: https://192.168.99.11/restgui/start.html
+      title: iDRAC Controller 9 (Destor Top)
+      icon: web
+    - url: https://192.168.99.11/restgui/start.html
+      title: iDRAC Controller 9 (Destor Below)
+      icon: web
+    - url: http://192.168.99.2/csb6652b71/config/log_off_page.htm
+      title: Switch Server Room(3rd Floor)
+      icon: web
+    - url: https://192.168.99.13/#/login
+      title: Seagate Controller A
+      icon: web
+    - url: https://192.168.99.14/#/login
+      title: Seagate Controller B
+      icon: web
+spec:
+  type: server
+  lifecycle: Production
+  owner: team-system
+  system: system
+  dependsOn: ['resource:artists-db']
+  apiConsumedBy: ['component:www-artist']
