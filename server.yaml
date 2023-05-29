@@ -20,9 +20,6 @@ metadata:
     - url: https://192.168.99.11/restgui/start.html
       title: iDRAC Controller 9 (Destor Below)
       icon: web
-    - url: http://192.168.99.2/csb6652b71/config/log_off_page.htm
-      title: Switch Server Room(3rd Floor)
-      icon: web
     - url: https://192.168.99.13/#/login
       title: Seagate Controller A
       icon: web
