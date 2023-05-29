@@ -14,8 +14,8 @@ metadata:
     - bi
     - analytics
   links:
-    - url: http://thserver.corp.tonghuagroup.com:30010
-      title: Driectus
+    - url: http://thserver.corp.tonghuagroup.com:30030
+      title: Metabase
       icon: web
 spec:
   type: bi-analytics
