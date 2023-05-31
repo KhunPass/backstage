@@ -1,4 +1,40 @@
 apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: team-system
+  description: Team System Engineer
+spec:
+  type: team
+  profile:
+    # displayName: Team System
+    email: it@tonghualabs.com
+    picture: https://avatars.dicebear.com/api/identicon/team-b@example.com.svg?background=%23fff&margin=25
+  parent: backstage
+  children: []
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Phapawit
+spec:
+  profile:
+    displayName: Phapawit Hirunsathitphon
+    email: phapawith@tonghualabs.com
+    picture: https://avatars.dicebear.com/api/avataaars/amelia-park@example.com.svg?background=%23fff
+  memberOf: [team-system]
+---
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: Passapong.Jongkonkate
+spec:
+  profile:
+    displayName: Passapong Jongkonkate
+    email: passapongj@tonghualabs.com
+    picture: https://avatars.dicebear.com/api/avataaars/colette-brock@example.com.svg?background=%23fff
+  memberOf: [team-system]
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: artist-lookup
